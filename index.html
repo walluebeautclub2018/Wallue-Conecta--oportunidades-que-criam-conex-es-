@@ -1,204 +1,253 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#24113f">
-  <meta name="description" content="Wallue Conecta — Oportunidades que fazem conexões. Encontre profissionais, serviços e oportunidades.">
-  <title>Wallue Conecta — Oportunidades que fazem conexões</title>
-  <style>
-    :root {
-      --roxo: #24113f;
-      --roxo-claro: #48266d;
-      --dourado: #d8b15a;
-      --creme: #fbf8f1;
-      --texto: #282333;
-      --branco: #fff;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--creme);
-      color: var(--texto);
-      line-height: 1.6;
-    }
-    a { color: inherit; }
-    .topo {
-      background: var(--roxo);
-      color: white;
-      padding: 18px 20px;
-      border-bottom: 3px solid var(--dourado);
-    }
-    .barra {
-      max-width: 1100px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-    .marca { font-size: 1.35rem; font-weight: 800; }
-    .marca span { color: var(--dourado); }
-    .slogan { font-size: .78rem; color: #eee4f8; }
-    .nav { display: flex; gap: 15px; flex-wrap: wrap; }
-    .nav a { text-decoration: none; font-size: .9rem; }
-    .hero {
-      background: linear-gradient(135deg, #24113f, #48266d);
-      color: white;
-      padding: 68px 22px 72px;
-      text-align: center;
-    }
-    .hero-conteudo { max-width: 850px; margin: auto; }
-    .etiqueta {
-      color: var(--dourado);
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: .78rem;
-    }
-    h1 {
-      font-size: clamp(2.1rem, 7vw, 4.2rem);
-      line-height: 1.12;
-      margin: 18px 0;
-    }
-    h1 span { color: var(--dourado); }
-    .hero p { max-width: 650px; margin: 0 auto 25px; color: #f1eaf8; }
-    .botoes { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
-    .botao {
-      display: inline-block;
-      padding: 12px 19px;
-      border-radius: 10px;
-      background: var(--dourado);
-      color: #24113f;
-      text-decoration: none;
-      font-weight: 800;
-      border: 2px solid var(--dourado);
-    }
-    .botao-secundario { background: transparent; color: white; }
-    main { max-width: 1100px; padding: 42px 20px; margin: auto; }
-    .introducao { text-align: center; max-width: 720px; margin: 0 auto 30px; }
-    .introducao h2 { color: var(--roxo); font-size: clamp(1.7rem, 4vw, 2.5rem); line-height: 1.2; }
-    .grade {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
-      gap: 18px;
-    }
-    .cartao {
-      background: white;
-      border: 1px solid #e7deed;
-      border-radius: 16px;
-      padding: 23px;
-      box-shadow: 0 7px 24px #24113f0b;
-    }
-    .icone { font-size: 2rem; }
-    .cartao h3 { color: var(--roxo); margin: 8px 0; }
-    .cartao p { font-size: .95rem; }
-    .link-cartao { color: #6b438f; font-weight: 800; text-decoration: none; }
-    .como {
-      background: #f0e8f5;
-      border-radius: 18px;
-      padding: 28px;
-      margin-top: 42px;
-      text-align: center;
-    }
-    .como h2 { color: var(--roxo); }
-    .aviso { font-size: .85rem; color: #62596b; }
-    footer {
-      background: var(--roxo);
-      color: white;
-      text-align: center;
-      padding: 28px 18px;
-      border-top: 3px solid var(--dourado);
-    }
-    footer p { margin: 6px; }
-    @media (max-width: 520px) {
-      .barra { justify-content: center; text-align: center; }
-      .nav { justify-content: center; }
-      .hero { padding-top: 48px; }
-      main { padding: 32px 16px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#24113f">
+<meta name="description" content="Wallue Conecta — oportunidades que conectam profissionais, clientes e empresas.">
+<title>Wallue Conecta | Oportunidades que conectam</title>
+<style>
+:root {
+  --roxo:#24113f;
+  --roxo2:#48266d;
+  --dourado:#d8b15a;
+  --creme:#fbf8f1;
+  --texto:#282333;
+  --branco:#fff;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0; font-family:Arial,Helvetica,sans-serif;
+  color:var(--texto); background:var(--creme); line-height:1.6;
+}
+header {
+  background:var(--roxo); color:white; padding:18px 5%;
+  display:flex; align-items:center; justify-content:space-between;
+  gap:14px; flex-wrap:wrap; border-bottom:3px solid var(--dourado);
+}
+.logo { font-size:23px; font-weight:800; letter-spacing:1px; }
+.logo span { color:var(--dourado); }
+nav { display:flex; gap:18px; flex-wrap:wrap; }
+nav a { color:white; text-decoration:none; font-weight:bold; }
+.hero {
+  overflow:hidden; position:relative; text-align:center;
+  padding:76px 20px 70px; color:white;
+  background:radial-gradient(circle at 80% 20%,#69468a 0,transparent 35%),
+  linear-gradient(135deg,var(--roxo),#351952 65%,#171027);
+}
+.hero:before {
+  content:""; position:absolute; width:230px; height:230px;
+  border:1px solid #d8b15a66; border-radius:50%;
+  top:-100px; right:-45px; animation:orbita 18s linear infinite;
+}
+.hero:after {
+  content:""; position:absolute; width:150px; height:150px;
+  border:1px solid #d8b15a66; border-radius:50%;
+  bottom:-85px; left:-30px; animation:orbita 14s linear infinite reverse;
+}
+.hero > * { position:relative; z-index:1; }
+.selo {
+  display:inline-block; color:var(--dourado); border:1px solid var(--dourado);
+  border-radius:30px; padding:6px 15px; font-size:13px;
+  letter-spacing:2px; text-transform:uppercase;
+}
+h1 { font-size:clamp(34px,7vw,60px); line-height:1.12; margin:22px auto; max-width:850px; }
+h1 span { color:var(--dourado); }
+.hero p { max-width:650px; margin:0 auto 28px; font-size:18px; color:#eee8f5; }
+.botao {
+  display:inline-block; border:0; border-radius:30px; padding:14px 23px;
+  background:var(--dourado); color:var(--roxo); text-decoration:none;
+  font-weight:bold; cursor:pointer; transition:transform .2s, box-shadow .2s;
+}
+.botao:hover { transform:translateY(-3px); box-shadow:0 8px 24px #0003; }
+.botao.secundario { background:transparent; border:1px solid var(--dourado); color:white; margin-left:8px; }
+section { padding:54px 5%; }
+.titulo { text-align:center; margin:0 auto 30px; max-width:700px; }
+.titulo h2 { color:var(--roxo); font-size:clamp(26px,5vw,38px); margin-bottom:8px; }
+.titulo p { color:#686173; margin-top:0; }
+.grade { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr)); gap:18px; max-width:1100px; margin:auto; }
+.card {
+  background:white; padding:25px; border-radius:18px;
+  border:1px solid #e9e1d2; box-shadow:0 8px 25px #24113f0b;
+  transition:transform .25s, box-shadow .25s;
+  animation:subir .7s ease both;
+}
+.card:hover { transform:translateY(-5px); box-shadow:0 14px 30px #24113f18; }
+.icone { font-size:30px; }
+.card h3 { color:var(--roxo); margin:8px 0; }
+.faixa { background:#f0e9f5; }
+.painel {
+  max-width:850px; margin:auto; background:white; border-radius:20px;
+  padding:clamp(20px,5vw,38px); box-shadow:0 12px 35px #24113f12;
+  border-top:4px solid var(--dourado);
+}
+form { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.campo { display:flex; flex-direction:column; gap:6px; }
+.campo.largo { grid-column:1/-1; }
+label { font-weight:bold; font-size:14px; color:var(--roxo); }
+input,select,textarea {
+  width:100%; min-width:0; padding:13px; border:1px solid #d9d2e0;
+  border-radius:10px; background:#fff; color:var(--texto); font:inherit;
+}
+input:focus,select:focus,textarea:focus {
+  outline:2px solid #d8b15a88; border-color:var(--dourado);
+}
+form button { grid-column:1/-1; font-size:16px; }
+.aviso { color:#6b6474; font-size:13px; }
+.resultados { max-width:1100px; margin:25px auto 0; }
+.perfil { border-left:4px solid var(--dourado); }
+.perfil a { color:var(--roxo2); font-weight:bold; }
+footer {
+  background:var(--roxo); color:white; text-align:center; padding:30px 15px;
+  border-top:3px solid var(--dourado);
+}
+footer strong { color:var(--dourado); }
+@keyframes subir {
+  from { opacity:0; transform:translateY(18px); }
+  to { opacity:1; transform:translateY(0); }
+}
+@keyframes orbita { to { transform:rotate(360deg); } }
+@media(max-width:600px) {
+  header { justify-content:center; text-align:center; }
+  nav { justify-content:center; gap:13px; }
+  .hero { padding:58px 18px; }
+  .hero p { font-size:16px; }
+  form { grid-template-columns:1fr; }
+  .campo.largo, form button { grid-column:1; }
+  .botao.secundario { margin:10px 0 0; }
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after { animation:none!important; scroll-behavior:auto!important; transition:none!important; }
+}
+</style>
 </head>
 <body>
-  <header class="topo">
-    <div class="barra">
-      <div>
-        <div class="marca">WALLUE <span>CONECTA</span></div>
-        <div class="slogan">Oportunidades que fazem conexões.</div>
-      </div>
-      <nav class="nav" aria-label="Navegação principal">
-        <a href="#servicos">Serviços</a>
-        <a href="#profissionais">Profissionais</a>
-        <a href="#empresas">Empresas</a>
-      </nav>
-    </div>
-  </header>
+<header>
+  <div class="logo">WALLUE <span>CONECTA</span></div>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#categorias">Oportunidades</a>
+    <a href="#cadastro">Cadastrar</a>
+    <a href="#buscar">Buscar</a>
+  </nav>
+</header>
 
-  <section class="hero">
-    <div class="hero-conteudo">
-      <div class="etiqueta">Conexões que abrem caminhos</div>
-      <h1>Quem precisa encontra.<br><span>Quem oferece se conecta.</span></h1>
-      <p>Uma plataforma para aproximar pessoas, profissionais e empresas, facilitando o encontro entre quem procura um serviço e quem tem talento para oferecer.</p>
-      <div class="botoes">
-        <a class="botao" href="#servicos">Encontrar serviços</a>
-        <a class="botao botao-secundario" href="#profissionais">Divulgar meu trabalho</a>
-      </div>
+<main>
+  <section class="hero" id="inicio">
+    <div class="selo">Conexões que transformam</div>
+    <h1>Seu talento merece <span>ser encontrado.</span></h1>
+    <p>Uma plataforma para aproximar profissionais, clientes e empresas. Mostre o que você faz e abra caminhos para novas oportunidades.</p>
+    <a class="botao" href="#cadastro">Quero me cadastrar</a>
+    <a class="botao secundario" href="#buscar">Encontrar profissionais</a>
+  </section>
+
+  <section id="categorias">
+    <div class="titulo">
+      <h2>Oportunidades que conectam</h2>
+      <p>Talentos, serviços e negócios ganhando espaço.</p>
+    </div>
+    <div class="grade">
+      <article class="card">
+        <div class="icone">✦</div>
+        <h3>Profissionais</h3>
+        <p>Apresente seus serviços, sua experiência e seu talento.</p>
+        <a href="#cadastro">Criar meu perfil →</a>
+      </article>
+      <article class="card">
+        <div class="icone">⌕</div>
+        <h3>Clientes</h3>
+        <p>Encontre profissionais de acordo com sua necessidade e cidade.</p>
+        <a href="#buscar">Buscar serviços →</a>
+      </article>
+      <article class="card">
+        <div class="icone">▦</div>
+        <h3>Empresas e negócios</h3>
+        <p>Descubra talentos e novas possibilidades de parceria.</p>
+        <a href="#cadastro">Participar →</a>
+      </article>
     </div>
   </section>
 
-  <main>
-    <section id="servicos">
-      <div class="introducao">
-        <div class="etiqueta">Encontre sua conexão</div>
-        <h2>O que você está procurando?</h2>
-        <p>Explore as áreas da Wallue Conecta e descubra novas possibilidades.</p>
-      </div>
+  <section class="faixa" id="cadastro">
+    <div class="titulo">
+      <h2>Seu próximo passo começa aqui</h2>
+      <p>Preencha seus dados para preparar seu perfil profissional.</p>
+    </div>
+    <div class="painel">
+      <form id="formCadastro">
+        <div class="campo">
+          <label for="nome">Nome completo *</label>
+          <input id="nome" name="nome" autocomplete="name" required>
+        </div>
+        <div class="campo">
+          <label for="profissao">Profissão *</label>
+          <input id="profissao" name="profissao" placeholder="Ex.: manicure, eletricista" required>
+        </div>
+        <div class="campo">
+          <label for="cidade">Cidade *</label>
+          <input id="cidade" name="cidade" placeholder="Ex.: Camaçari" required>
+        </div>
+        <div class="campo">
+          <label for="whatsapp">WhatsApp com DDD *</label>
+          <input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="(71) 99999-9999" required>
+        </div>
+        <div class="campo largo">
+          <label for="servicos">Serviços oferecidos *</label>
+          <textarea id="servicos" name="servicos" rows="3" placeholder="Conte quais serviços você realiza" required></textarea>
+        </div>
+        <div class="campo largo">
+          <label for="foto_url">Link da foto de perfil (opcional)</label>
+          <input id="foto_url" name="foto_url" type="url" placeholder="https://...">
+        </div>
+        <div class="campo largo">
+          <label><input id="consentimento" type="checkbox" required style="width:auto"> Autorizo a divulgação dos dados profissionais informados, incluindo meu WhatsApp, no perfil público.</label>
+        </div>
+        <button class="botao" type="submit">Preparar cadastro</button>
+        <p class="aviso campo largo">Nesta versão, o formulário ainda não envia os dados para o banco. A conexão segura será configurada e testada antes de receber cadastros reais.</p>
+      </form>
+      <div id="mensagem" role="status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="buscar">
+    <div class="titulo">
+      <h2>Encontre seu próximo contato</h2>
+      <p>Pesquise por profissão ou cidade.</p>
+    </div>
+    <div class="painel">
       <div class="grade">
-        <article class="cartao">
-          <div class="icone">💜</div>
-          <h3>Beleza e bem-estar</h3>
-          <p>Cabeleireiras, manicures, pedicures, maquiagem, sobrancelhas e estética.</p>
-          <a class="link-cartao" href="#profissionais">Conhecer a categoria →</a>
-        </article>
-        <article class="cartao">
-          <div class="icone">🏡</div>
-          <h3>Casa e serviços</h3>
-          <p>Encontre profissionais para limpeza, organização e serviços domésticos.</p>
-          <a class="link-cartao" href="#profissionais">Conhecer a categoria →</a>
-        </article>
-        <article class="cartao" id="profissionais">
-          <div class="icone">✨</div>
-          <h3>Profissionais</h3>
-          <p>Apresente seu trabalho, divulgue seus serviços e amplie suas oportunidades.</p>
-          <a class="link-cartao" href="#cadastro">Quero me apresentar →</a>
-        </article>
-        <article class="cartao" id="empresas">
-          <div class="icone">🏢</div>
-          <h3>Empresas e negócios</h3>
-          <p>Encontre pessoas para serviços e oportunidades de trabalho conforme sua necessidade.</p>
-          <a class="link-cartao" href="#cadastro">Conhecer a plataforma →</a>
-        </article>
+        <div class="campo">
+          <label for="buscaProfissao">Profissão</label>
+          <input id="buscaProfissao" placeholder="Ex.: manicure">
+        </div>
+        <div class="campo">
+          <label for="buscaCidade">Cidade</label>
+          <input id="buscaCidade" placeholder="Ex.: Salvador">
+        </div>
       </div>
-    </section>
+      <p class="aviso">Os perfis aparecerão aqui depois que a consulta ao Supabase estiver conectada.</p>
+      <div class="resultados" id="resultados" aria-live="polite"></div>
+    </div>
+  </section>
+</main>
 
-    <section class="como" id="cadastro">
-      <h2>Uma conexão pode abrir novas portas.</h2>
-      <p>A Wallue Conecta está sendo preparada para aproximar clientes, profissionais e empresas em um só lugar.</p>
-      <a class="botao" href="mailto:contato@wallue.com.br?subject=Interesse%20na%20Wallue%20Conecta">Tenho interesse</a>
-      <p class="aviso">Este botão abre o aplicativo de e-mail, quando disponível. O cadastro, a busca real e as mensagens ainda precisam ser implementados.</p>
-    </section>
-  </main>
+<footer>
+  <div class="logo">WALLUE <span>CONECTA</span></div>
+  <p><strong>Oportunidades que conectam.</strong></p>
+  <p>Talentos valorizados. Novas conexões. Mais possibilidades.</p>
+  <small>© <span id="ano"></span> Wallue Conecta</small>
+</footer>
 
-  <footer>
-    <div class="marca">WALLUE <span>CONECTA</span></div>
-    <p>Oportunidades que fazem conexões.</p> 
-    <p>© <span id="ano"></span> Wallue Conecta</p>
-  </footer>
-  <script>
-    document.getElementById("ano").textContent = new Date().getFullYear();
-  </script>
+<script>
+document.getElementById("ano").textContent = new Date().getFullYear();
+
+document.getElementById("formCadastro").addEventListener("submit", function(event) {
+  event.preventDefault();
+  document.getElementById("mensagem").textContent =
+    "Formulário visual pronto. O envio real será ativado após a conexão com o banco de dados.";
+});
+</script>
 </body>
 </html>
