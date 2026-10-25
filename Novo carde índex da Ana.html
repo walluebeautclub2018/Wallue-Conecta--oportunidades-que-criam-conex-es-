@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#24113f">
+<meta name="description" content="Wallue Conecta — oportunidades que conectam profissionais, clientes e empresas.">
+<title>Wallue Conecta | Oportunidades que conectam</title>
+<style>
+:root{--roxo:#24113f;--roxo2:#48266d;--dourado:#d8b15a;--creme:#fbf8f1;--texto:#282333}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--texto);background:var(--creme);line-height:1.6}
+header{background:var(--roxo);color:#fff;padding:18px 5%;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;border-bottom:3px solid var(--dourado)}
+.logo{font-size:23px;font-weight:800;letter-spacing:1px}.logo span{color:var(--dourado)}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-weight:bold}
+.hero{overflow:hidden;position:relative;text-align:center;padding:76px 20px 70px;color:#fff;background:radial-gradient(circle at 80% 20%,#69468a 0,transparent 35%),linear-gradient(135deg,var(--roxo),#351952 65%,#171027)}
+.hero:before{content:"";position:absolute;width:230px;height:230px;border:1px solid #d8b15a66;border-radius:50%;top:-100px;right:-45px;animation:orbita 18s linear infinite}
+.hero:after{content:"";position:absolute;width:150px;height:150px;border:1px solid #d8b15a66;border-radius:50%;bottom:-85px;left:-30px;animation:orbita 14s linear infinite reverse}
+.hero>*{position:relative;z-index:1}.selo{display:inline-block;color:var(--dourado);border:1px solid var(--dourado);border-radius:30px;padding:6px 15px;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(34px,7vw,60px);line-height:1.12;margin:22px auto;max-width:850px}h1 span{color:var(--dourado)}.hero p{max-width:650px;margin:0 auto 28px;font-size:18px;color:#eee8f5}
+.botao{display:inline-block;border:0;border-radius:30px;padding:14px 23px;background:var(--dourado);color:var(--roxo);text-decoration:none;font-weight:bold;cursor:pointer;transition:transform .2s,box-shadow .2s}.botao:hover{transform:translateY(-3px);box-shadow:0 8px 24px #0003}.botao.secundario{background:transparent;border:1px solid var(--dourado);color:#fff;margin-left:8px}
+section{padding:42px 5%}.titulo{text-align:center;margin:0 auto 28px;max-width:700px}.titulo h2{color:var(--roxo);font-size:clamp(26px,5vw,38px);margin-bottom:8px}.titulo p{color:#686173;margin-top:0}
+.cards-ana{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1100px;margin:0 auto}
+.card-ana{display:block;overflow:hidden;background:#fff;border:2px solid #e9e1d2;border-radius:18px;box-shadow:0 8px 25px #24113f0b;text-decoration:none;color:var(--roxo);transition:transform .2s,border-color .2s}
+.card-ana:hover,.card-ana:focus{transform:translateY(-3px);border-color:var(--dourado);outline:2px solid transparent}.card-ana img{display:block;width:100%;height:auto;min-height:120px}.card-ana strong{display:block;padding:13px;text-align:center}
+.faixa{background:#f0e9f5}.painel{max-width:850px;margin:auto;background:#fff;border-radius:20px;padding:clamp(20px,5vw,38px);box-shadow:0 12px 35px #24113f12;border-top:4px solid var(--dourado)}
+form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.campo{display:flex;flex-direction:column;gap:6px}.campo.largo{grid-column:1/-1}label{font-weight:bold;font-size:14px;color:var(--roxo)}
+input,select,textarea{width:100%;min-width:0;padding:13px;border:1px solid #d9d2e0;border-radius:10px;background:#fff;color:var(--texto);font:inherit}input:focus,select:focus,textarea:focus{outline:2px solid #d8b15a88;border-color:var(--dourado)}input[type=checkbox]{width:auto;display:inline-block}
+form button{grid-column:1/-1;font-size:16px}.aviso{color:#6b6474;font-size:13px}.hidden{display:none!important}.actions{display:flex;gap:10px;flex-wrap:wrap}
+footer{background:var(--roxo);color:#fff;text-align:center;padding:30px 15px;border-top:3px solid var(--dourado)}footer strong{color:var(--dourado)}
+@keyframes orbita{to{transform:rotate(360deg)}}@media(max-width:700px){header{justify-content:center;text-align:center}nav{justify-content:center;gap:13px}.hero{padding:58px 18px}.hero p{font-size:16px}.botao.secundario{margin:10px 0 0}.cards-ana{grid-template-columns:1fr;max-width:440px}form{grid-template-columns:1fr}.campo.largo,form button{grid-column:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">WALLUE <span>CONECTA</span></div>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#escolha">Oportunidades</a>
+    <a href="#cadastro">Cadastrar</a>
+    <a href="#buscar">Buscar</a>
+  </nav>
+</header>
+<main>
+  <section class="hero" id="inicio">
+    <div class="selo">Conexões que transformam</div>
+    <h1>Seu talento merece <span>ser encontrado.</span></h1>
+    <p>Uma plataforma para aproximar profissionais, clientes e empresas. Mostre o que você faz e abra caminhos para novas oportunidades.</p>
+    <a class="botao" href="#escolha">Quero me cadastrar</a>
+    <a class="botao secundario" href="#buscar">Encontrar profissionais</a>
+  </section>
+
+  <section id="escolha">
+    <div class="titulo">
+      <h2>Como você quer se conectar?</h2>
+      <p>Escolha o card correspondente ao que você deseja fazer.</p>
+    </div>
+    <div class="cards-ana">
+      <a class="card-ana" href="#cadastro" data-tipo="profissional">
+        <img src="https://raw.githubusercontent.com/walluebeautclub2018/Wallue-Conecta--oportunidades-que-criam-conex-es-/main/01-profissionais%20CARD%20DA%20ANA.png" alt="Card oficial da Ana para profissionais da beleza, estética e bronzeamento">
+        <strong>Profissionais</strong>
+      </a>
+      <a class="card-ana" href="#cadastro" data-tipo="cliente">
+        <img src="https://raw.githubusercontent.com/walluebeautclub2018/Wallue-Conecta--oportunidades-que-criam-conex-es-/main/02-clientes%20CARD%20DA%20ANA%20CONECTA%202.png" alt="Card oficial da Ana para clientes">
+        <strong>Clientes</strong>
+      </a>
+      <a class="card-ana" href="#cadastro" data-tipo="empresa">
+        <img src="https://raw.githubusercontent.com/walluebeautclub2018/Wallue-Conecta--oportunidades-que-criam-conex-es-/main/03-conheca-wallue%20CARD%20DA%20ANA%20CONECTA%203.png" alt="Card oficial da Ana para empresas parceiras">
+        <strong>Empresas</strong>
+      </a>
+    </div>
+  </section>
+
+  <section class="faixa hidden" id="cadastro">
+    <div class="titulo"><h2 id="formTitulo">Seu próximo passo começa aqui</h2><p id="formSubtitulo">Preencha seus dados para preparar seu cadastro.</p></div>
+    <div class="painel">
+      <form id="formCadastro">
+        <input type="hidden" id="tipo" name="tipo">
+        <div class="campo"><label for="nome">Nome completo *</label><input id="nome" name="nome" autocomplete="name" required></div>
+        <div class="campo hidden" id="campoProfissao"><label for="profissao">Profissão *</label><input id="profissao" name="profissao" placeholder="Ex.: manicure, esteticista"></div>
+        <div class="campo hidden" id="campoEmpresa"><label for="empresa">Nome da empresa *</label><input id="empresa" name="empresa" autocomplete="organization"></div>
+        <div class="campo"><label for="cidade">Cidade *</label><input id="cidade" name="cidade" placeholder="Ex.: Camaçari" required></div>
+        <div class="campo"><label for="whatsapp">WhatsApp com DDD *</label><input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="(71) 99999-9999" required></div>
+        <div class="campo largo hidden" id="campoServicos"><label for="servicos">Serviços oferecidos *</label><textarea id="servicos" name="servicos" rows="3" placeholder="Conte quais serviços você realiza"></textarea></div>
+        <div class="campo largo hidden" id="campoInteresse"><label for="interesse">O que você procura? *</label><textarea id="interesse" name="interesse" rows="3" placeholder="Conte quais serviços procura"></textarea></div>
+        <div class="campo largo hidden" id="campoParceria"><label for="parceria">Como sua empresa gostaria de participar? *</label><textarea id="parceria" name="parceria" rows="3" placeholder="Parceria, divulgação, produtos ou oportunidades"></textarea></div>
+        <div class="campo largo hidden" id="campoFoto"><label for="foto_url">Link da foto de perfil (opcional)</label><input id="foto_url" name="foto_url" type="url" placeholder="https://..."></div>
+        <div class="campo largo"><label for="pagamento">Forma de pagamento (quando houver cobrança) *</label><select id="pagamento" name="pagamento" required><option value="">Selecione uma opção</option><option value="pix">Pix</option><option value="cartao_credito">Cartão de crédito</option></select></div>
+        <p class="aviso campo largo">A escolha do meio de pagamento ainda não processa cobranças. Não informe dados de cartão neste formulário.</p>
+        <div class="campo largo"><label><input id="consentimento" name="consentimento" type="checkbox" required> Autorizo o uso dos meus dados para contato sobre a Wallue Conecta. A divulgação pública exigirá autorização específica.</label></div>
+        <div class="actions campo largo"><button class="botao" type="submit">Continuar cadastro</button><button class="botao secundario" type="button" id="voltar">Voltar aos cards</button></div>
+        <p class="aviso campo largo">O envio real ainda não está conectado ao banco de dados. Nenhum dado será enviado ou armazenado por este formulário até a integração segura ser ativada e testada.</p>
+      </form>
+      <div id="mensagem" role="status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="buscar">
+    <div class="titulo"><h2>Encontre seu próximo contato</h2><p>Pesquise por profissão ou cidade.</p></div>
+    <div class="painel">
+      <div class="grade">
+        <div class="campo"><label for="buscaProfissao">Profissão</label><input id="buscaProfissao" placeholder="Ex.: manicure"></div>
+        <div class="campo"><label for="buscaCidade">Cidade</label><input id="buscaCidade" placeholder="Ex.: Salvador"></div>
+      </div>
+      <p class="aviso">Os perfis aparecerão aqui depois que a consulta ao Supabase estiver conectada.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="logo">WALLUE <span>CONECTA</span></div>
+  <p><strong>Oportunidades que conectam.</strong></p>
+  <p>Talentos valorizados. Novas conexões. Mais possibilidades.</p>
+  <small>© <span id="ano"></span> Wallue Conecta</small>
+</footer>
+<script>
+document.getElementById("ano").textContent=new Date().getFullYear();
+const cadastro=document.getElementById("cadastro"),form=document.getElementById("formCadastro");
+const vis=(id,on)=>document.getElementById(id).classList.toggle("hidden",!on);
+function escolher(tipo){
+ form.reset();document.getElementById("tipo").value=tipo;document.getElementById("mensagem").textContent="";
+ vis("campoProfissao",tipo==="profissional");vis("campoEmpresa",tipo==="empresa");vis("campoServicos",tipo==="profissional");vis("campoInteresse",tipo==="cliente");vis("campoParceria",tipo==="empresa");vis("campoFoto",tipo==="profissional");
+ document.getElementById("profissao").required=tipo==="profissional";document.getElementById("empresa").required=tipo==="empresa";document.getElementById("servicos").required=tipo==="profissional";document.getElementById("interesse").required=tipo==="cliente";document.getElementById("parceria").required=tipo==="empresa";
+ const tit={profissional:"Cadastro de profissional",cliente:"Cadastro de cliente",empresa:"Cadastro de empresa"};
+ const sub={profissional:"Apresente seus serviços, sua experiência e seu talento.",cliente:"Encontre profissionais de acordo com sua necessidade e cidade.",empresa:"Descubra talentos e novas possibilidades de parceria."};
+ document.getElementById("formTitulo").textContent=tit[tipo];document.getElementById("formSubtitulo").textContent=sub[tipo];cadastro.classList.remove("hidden");cadastro.scrollIntoView({behavior:"smooth",block:"start"});
+}
+document.querySelectorAll("[data-tipo]").forEach(el=>el.addEventListener("click",e=>{e.preventDefault();escolher(el.dataset.tipo)}));
+document.getElementById("voltar").addEventListener("click",()=>{cadastro.classList.add("hidden");document.getElementById("escolha").scrollIntoView({behavior:"smooth"});});
+form.addEventListener("submit",e=>{e.preventDefault();document.getElementById("mensagem").textContent="O cadastro ainda não foi enviado: a integração segura com o banco de dados e o processamento do pagamento estão pendentes.";});
+</script>
+</body>
+</html>
